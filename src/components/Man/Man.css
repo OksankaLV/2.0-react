@@ -1,0 +1,87 @@
+.matador {
+    position: relative;
+    margin: auto;
+    display: block;
+    /* margin-top: 100px; */
+    /* margin-bottom: 100px; */
+    width: calc(500px / 2);
+    height: calc(400px / 2);
+}
+.cloak {
+    width: 90px;
+    height: 120px;
+    background: rgba(245, 5, 5, 0.904);
+    left: 94px;
+    position: absolute;
+    top: 50px;
+    border-radius: 50% 50% 20% 20%;
+    overflow: hidden;
+    animation: rotate-cloak 2s infinite 2s;
+}
+
+
+@keyframes rotate-cloak {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        top:70px;
+        transform: rotate(20deg) translate(-2vmin);
+    }
+    75%{
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.hat {
+    position: absolute;
+    left: 110px;
+    top:-5px;
+    width: calc(175px / 2);
+    height: 25px;
+    transform: rotate(10deg);
+    border-radius: 50%;
+    background-color: blue;
+}
+.mouth{
+    position: absolute;
+        left: 25px;
+        top: 50px;
+        width: 10px;
+        height: 15px;
+        transform: rotate(30deg);
+        border-radius: 50%;
+        box-shadow: 5px 5px 0 red, 5px 5px red;
+}
+.headMan {
+    position: absolute;
+    left: 110px;
+    top: -5px;
+    width: 60px;
+    height: 90px;
+    background: rgb(228, 210, 56);
+    border-radius: 50% 50% 45% 45%;
+    overflow: hidden;
+    transform: rotate(10deg);
+}
+.legMan{
+    position: absolute;
+    top:170px;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 0 0 20px 20px;
+}
+
+.legMan.left{
+    left: 110px
+}
+.legMan.right {
+    left: 140px
+}
+
